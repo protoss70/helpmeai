@@ -9,6 +9,8 @@ var auth = undefined;
 var firestore = undefined;
 var analytics = undefined;
 
+console.log("here");
+
 fire.initApp = () => {
 
     // const firebaseConfig = {
