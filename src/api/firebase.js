@@ -13,15 +13,15 @@ console.log("here");
 
 fire.initApp = () => {
 
-    // const firebaseConfig = {
-    //     apiKey: "AIzaSyBLUhdnTnUzPIpEeccA040FODk9X0lKE4w",
-    //     authDomain: "bindrake-ddcfa.firebaseapp.com",
-    //     projectId: "bindrake-ddcfa",
-    //     storageBucket: "bindrake-ddcfa.appspot.com",
-    //     messagingSenderId: "912905037047",
-    //     appId: "1:912905037047:web:ef36cceadc7d44bd8a1ff2",
-    //     measurementId: "G-TGTDPTLRR8"
-    //     };
+    const firebaseConfig = {
+        apiKey: "AIzaSyBJvi_Uv2mFaOdRz779PD-UEblIYaqYrE0",
+        authDomain: "helpme-ai.firebaseapp.com",
+        projectId: "helpme-ai",
+        storageBucket: "helpme-ai.appspot.com",
+        messagingSenderId: "276768582592",
+        appId: "1:276768582592:web:7f9f2273da7d60ce23f625",
+        measurementId: "G-3S1NQV2CTF"
+        };
   
   // Initialize Firebase
   const app = firebase.initializeApp(firebaseConfig);
