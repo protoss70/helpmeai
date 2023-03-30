@@ -15,12 +15,12 @@ function Nav(props) {
     function loggedOptions(){
         return props.user !== null ? (
             <div>
-                <div className="listOfNavItems">
+                {/* <div className="listOfNavItems">
                     <Link className='aOfNav' to={"/"}><button className={`item1 btn navBtn ${path === "/" ? "active" : ""}`}>Home</button></Link>
                     <Link className='aOfNav' to={"/Product"}><button className={`item2 btn navBtn ${path === "/sop" ? "active" : ""}`}>Product</button></Link>
                     <Link className='aOfNav' to={"/Contact"}><button className={`item3 btn navBtn ${path === "/files" ? "active" : ""}`}>Contact</button></Link>
                     <Link className='aOfNav' to={"/About"}><button className={`item2 btn navBtn ${path === "/sop" ? "active" : ""}`}>About Us</button></Link>
-                </div>
+                </div> */}
 			</div>
         ) : <></>
     }

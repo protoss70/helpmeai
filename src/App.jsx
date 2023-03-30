@@ -7,6 +7,7 @@ import Register from './Components/Auth/Register';
 import Sign from "./Components/Auth/Sign";
 import { useEffect, useState } from 'react';
 import Forgot from './Components/Auth/Forgot';
+import Product from './Components/Product/Product';
 
 fire.initApp();
 
@@ -31,6 +32,7 @@ function App() {
     <BrowserRouter>
     <Nav user={user} fire={fire}/>
       <Routes>
+      <Route path="/" element={<Product user={user} fire={fire} />} />
         <Route path="/signin" element={<Sign user={user} fire={fire} />} />
         <Route path="/register" element={<Register user={user} fire={fire} />} />
         <Route path="/forgot" element={<Forgot fire={fire}/>} />

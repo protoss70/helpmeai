@@ -50,7 +50,7 @@ body{
 }
 
 .Nav{
-    background-color: #2B3338;
+    background-color: rgb(54,109,108);
     padding: 0 7%;
     z-index: 1;
     display: flex;
