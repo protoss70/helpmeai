@@ -107,7 +107,8 @@ fire.createUser = async () => {
         await fire.verificationMail();
     }
     return await userRef.set({
-        email
+        email,
+        Role: "None"
     });
 }
 
