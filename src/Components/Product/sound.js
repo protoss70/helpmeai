@@ -4,6 +4,7 @@ let recordedChunks = [];
 // Start recording audio
 export function startRecording() {
     recordedChunks = []
+    console.log("start called");
     navigator.mediaDevices.getUserMedia({ audio: true })
         .then(stream => {
         mediaRecorder = new MediaRecorder(stream);
@@ -20,24 +21,29 @@ export function startRecording() {
 }
 
 // Stop recording audio
-export function stopRecording() {
+export async function stopRecording() {
+    console.log("stop called");
   if (mediaRecorder !== null) {
-    mediaRecorder.stop();
-    mediaRecorder = null;
+    await mediaRecorder.stop();
   }
 }
 
 export function turnToWav(){
-    const audioBlob = new Blob(recordedChunks, { type: 'audio/webm' });
+    stopRecording();
+    console.log("turn to wav");
+    const audioBlob = new Blob(recordedChunks, {
+        'type': 'audio/mpeg'
+    });
     return audioBlob;
 }
 
 // Play back the recorded audio
 export function playBack() {
+    console.log("play back");
   if (recordedChunks.length > 0) {
-    const audioBlob = new Blob(recordedChunks, { type: 'audio/webm' });
+    const audioBlob = new Blob(recordedChunks, { type: 'audio/wav' });
+    console.log(audioBlob);
     const audioUrl = URL.createObjectURL(audioBlob);
-    const audio = new Audio(audioUrl);
-    audio.play();
+    return audioBlob;
   }
 }
