@@ -1,6 +1,6 @@
 # Accessibility Hotline Assistant
 
-This project was created for the Microsoft Accessibility Hackathon, where it won **2nd place**. The application combines a user-friendly interface with GPT technology to assist hotline operators in identifying the urgency of callers in psychological distress.
+This project was created under 24 hours for the Microsoft Accessibility Hackathon, where it won **2nd place**. The application combines a user-friendly interface with GPT technology to assist hotline operators in identifying the urgency of callers in psychological distress.
 
 ## Features
 
